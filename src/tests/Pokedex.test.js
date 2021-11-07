@@ -65,12 +65,9 @@ describe('Requisito 5. Testa o componente Pokedex.js', () => {
         userEvent.click(nextPokemon);
       });
     });
-
-    const allButton = screen.getByRole('button', { name: /all/i });
-    expect(allButton).toBeVisible();
   });
 
-  test('Verifica se a Pokédex contém um botão para resetar o filtro', () => {
+  test('Verifica se contém um botão para resetar o filtro e está sempre visível', () => {
     const allButton = screen.getByRole('button', { name: /all/i });
     expect(allButton).toBeInTheDocument();
     userEvent.click(allButton);
