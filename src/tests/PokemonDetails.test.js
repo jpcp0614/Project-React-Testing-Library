@@ -45,3 +45,5 @@ describe('Requisito 7. Testa o componente PokemonDetails.js', () => {
     userEvent.click(favChecked);
   });
 });
+
+// finalizado! Obrigado Valdenio!
